@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background: #f4f4f4;
+}
+
+#setup, #quiz-container, #result {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    background: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#options button.selected {
+    background: #8bc34a;
+    color: #fff;
+}
+
+#timerDIV {
+    font-size: 18px;
+    color: #fff;
+    background: #2196f3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Suggested: a more reasonable mobile breakpoint (e.g., 600px) */
+@media (max-width: 600px) {
+    body {margin: 10px;}
+    #setup, #quiz-container, #result {
+        max-width: 100%;
+        padding: 8px;
+    }
+}

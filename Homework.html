@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynamic Quizlet</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <div id="setup">
+        <h1>Quiz Application</h1>
+        <label>Category:
+            <select id="Category">
+                <option value="math">MATHEMATICS</option>
+            </select>
+        </label>
+        <label>Difficulty:
+            <select id="Difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+            </select>
+        </label>
+        <button id="startBUTTON">Start the Quiz</button>
+    </div>
+
+    <div id="Quiz_Container" style="display: none;">
+        <div id="timerDiv"></div>
+        <div id="Question"></div>
+        <div id="Options"></div>
+        <button id="nextBUTTON">Next</button>
+        <button id="SubmitBUTTON" style="display: none;">SUBMIT!!</button>
+    </div>
+
+    <div id="Result" style="display:none;">
+        <h2>QUIZ RESULT!!!</h2>
+        <div id="Score"></div>
+        <div id="Details"></div>
+        <button onclick="location.reload();">RESTART QUIZ!!!</button>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
